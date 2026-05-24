@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英語單字配對樂園</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="top-bar">
+        <h1>🌈 英語單字配對樂園</h1>
+        <p>點兩張卡片，把圖片和正確英文單字配對！</p>
+      </header>
+
+      <section class="status-panel" aria-live="polite">
+        <div class="score-box">
+          <span>分數</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="score-box">
+          <span>已配對</span>
+          <strong><span id="matched">0</span>/<span id="total">0</span></strong>
+        </div>
+        <button id="restartBtn" type="button">重新開始</button>
+      </section>
+
+      <section id="gameBoard" class="board" aria-label="英語配對卡片區"></section>
+
+      <p id="message" class="message">準備好了嗎？一起學英文！</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
